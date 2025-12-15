@@ -61,8 +61,8 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/openw
 git clone https://github.com/sirpdboy/luci-app-taskplan package/luci-app-taskplan
 
 # 18.06 Argone theme
-git clone https://github.com/hza81007155/luci-theme-argone
-git clone https://github.com/hza81007155/luci-app-argone-config
+git clone --depth=1 -b main https://github.com/hza81007155/luci-theme-argone package/luci-theme-argone
+git clone --depth=1 -b main https://github.com/hza81007155/luci-app-argone-config package/luci-app-argone-config
 
 # istore
 git clone --depth=1 -b main https://github.com/linkease/nas-packages-luci package/nas-packages-luci
