@@ -63,6 +63,7 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages packa
 git clone --depth=1 -b main https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/openwrt-passwall2
 git clone https://github.com/sirpdboy/luci-app-taskplan package/luci-app-taskplan
+git clone --depth=1 -b master https://github.com/maxlicheng/luci-app-unblockmusic package/luci-app-unblockmusic
 
 # 18.06 Argone theme
 git clone --depth=1 -b main https://github.com/hza81007155/luci-theme-argone package/luci-theme-argone
