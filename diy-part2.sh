@@ -29,7 +29,7 @@ rm -rf feeds/packages/net/lucky
 rm -rf feeds/packages/utils/coremark
 
 # 删除冲突插件
-rm -rf $(find ./ ../feeds/luci/ ../feeds/packages/ -maxdepth 3 -type d \( -iname "*argon*" -o -iname "*openclash*" -o -iname "*lucky*" \) -prune)
+#rm -rf $(find ./ ../feeds/luci/ ../feeds/packages/ -maxdepth 3 -type d \( -iname "*argon*" -o -iname "*openclash*" -o -iname "*lucky*" \) -prune)
 
 # 设置默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argone/g' feeds/luci/collections/luci-light/Makefile
@@ -56,7 +56,7 @@ function git_sparse_clone() {
 git clone --depth=1 -b dev https://github.com/stevenjoezhang/luci-app-adguardhome package/luci-app-adguardhome
 git_sparse_clone openwrt-24.10 https://github.com/openwrt/packages utils/coremark
 # git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
-git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
+git clone --depth=1 -b main https://github.com/sirpdboy/luci-app-lucky package/luci-app-lucky
 # git clone --depth=1 -b master https://github.com/hza81007155/luci-theme-argon package/luci-theme-argon
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash package/luci-app-openclash
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
