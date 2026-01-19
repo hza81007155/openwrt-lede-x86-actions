@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: openwrt-st
+name: X86-ST
 
 on:
   repository_dispatch:
